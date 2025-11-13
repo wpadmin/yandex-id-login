@@ -1,0 +1,27 @@
+# Directories
+/.git
+/.github
+/node_modules
+/vendor
+
+# Files
+.distignore
+.gitignore
+.gitattributes
+composer.json
+composer.lock
+package.json
+package-lock.json
+phpcs.xml
+phpcs.xml.dist
+phpunit.xml
+phpunit.xml.dist
+README.md
+.editorconfig
+.eslintignore
+.eslintrc
+.phpcs.xml.dist
+
+# Development
+*.md
+!readme.txt

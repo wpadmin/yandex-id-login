@@ -1,0 +1,38 @@
+# Composer
+/vendor/
+composer.lock
+
+# Claude
+.claude.ai
+.claude/
+
+# Node
+/node_modules/
+package-lock.json
+
+# Build
+/build/
+/dist/
+
+# IDE
+/.vscode/
+/.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# WordPress
+/wordpress/
+/wp-content/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local

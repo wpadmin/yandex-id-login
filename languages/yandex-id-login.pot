@@ -1,0 +1,117 @@
+# Copyright (C) 2024 Evgeni Sh.
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Yandex ID Login 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/wpadmin/yandex-id-login/issues\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: yandex-id-login.php:42
+#: includes/class-activator.php:42
+#: includes/class-core.php:197
+#: includes/class-core.php:299
+#: includes/class-core.php:384
+msgid "Sign in with Yandex"
+msgstr ""
+
+#: includes/class-core.php:79
+msgid "Yandex ID Login Settings"
+msgstr ""
+
+#: includes/class-core.php:80
+msgid "Yandex ID"
+msgstr ""
+
+#: includes/class-core.php:102
+msgid "API Settings"
+msgstr ""
+
+#: includes/class-core.php:106
+msgid "Client ID"
+msgstr ""
+
+#: includes/class-core.php:114
+msgid "Client Secret"
+msgstr ""
+
+#: includes/class-core.php:122
+msgid "Display Settings"
+msgstr ""
+
+#: includes/class-core.php:128
+msgid "Button Text"
+msgstr ""
+
+#: includes/class-core.php:136
+msgid "Show on Login Page"
+msgstr ""
+
+#: includes/class-core.php:144
+msgid "Show on Register Page"
+msgstr ""
+
+#: includes/class-core.php:152
+msgid "Auto-create Users"
+msgstr ""
+
+#: includes/class-core.php:193
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-core.php:198
+msgid "Setup Instructions"
+msgstr ""
+
+#: includes/class-core.php:202
+msgid "Register your application at %s"
+msgstr ""
+
+#: includes/class-core.php:210
+msgid "Set callback URL to: %s"
+msgstr ""
+
+#: includes/class-core.php:217
+msgid "Copy Client ID and Client Secret to the fields above"
+msgstr ""
+
+#: includes/class-core.php:218
+msgid "Save settings and test the login button"
+msgstr ""
+
+#: includes/class-core.php:227
+msgid "Enter your Yandex OAuth application credentials."
+msgstr ""
+
+#: includes/class-core.php:280
+msgid "Display Yandex login button on WordPress login page"
+msgstr ""
+
+#: includes/class-core.php:294
+msgid "Display Yandex login button on WordPress registration page"
+msgstr ""
+
+#: includes/class-core.php:308
+msgid "Automatically create WordPress accounts for Yandex users"
+msgstr ""
+
+#: includes/class-core.php:397
+msgid "Invalid security token."
+msgstr ""
+
+#: includes/class-core.php:403
+msgid "Failed to get access token from Yandex."
+msgstr ""
+
+#: includes/class-core.php:409
+msgid "Failed to get user information from Yandex."
+msgstr ""
+
+#: includes/class-core.php:415
+msgid "Failed to create user account."
+msgstr ""
