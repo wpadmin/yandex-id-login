@@ -73,6 +73,7 @@ class Yandex_ID_Core {
 		add_action( 'init', [ $this, 'load_textdomain' ] );
 		add_action( 'admin_menu', [ $this, 'register_admin_menu' ] );
 		add_action( 'admin_init', [ $this, 'register_settings' ] );
+		add_action( 'login_enqueue_scripts', [ $this, 'enqueue_login_styles' ] );
 		add_action( 'login_form', [ $this, 'render_login_button' ] );
 		add_action( 'register_form', [ $this, 'render_register_button' ] );
 		add_action( 'init', [ $this, 'handle_oauth_callback' ] );
@@ -88,6 +89,20 @@ class Yandex_ID_Core {
 			'yandex-id-login',
 			false,
 			dirname( YANDEX_ID_PLUGIN_BASENAME ) . '/languages'
+		);
+	}
+
+	/**
+	 * Enqueue login page styles
+	 *
+	 * @return void
+	 */
+	public function enqueue_login_styles(): void {
+		wp_enqueue_style(
+			'yandex-id-button',
+			YANDEX_ID_PLUGIN_URL . 'assets/css/yandex-button.css',
+			[],
+			YANDEX_ID_VERSION
 		);
 	}
 
@@ -381,10 +396,11 @@ class Yandex_ID_Core {
 
 		$auth_url    = $this->get_authorization_url();
 		$button_text = $this->options['button_text'] ?? __( 'Sign in with Yandex', 'yandex-id-login' );
+		$icon_url    = YANDEX_ID_PLUGIN_URL . 'assets/images/ya-icon.svg';
 		?>
-		<div class="yandex-id-login-wrapper" style="margin: 20px 0;">
-			<a href="<?php echo esc_url( $auth_url ); ?>" class="button button-large" style="width: 100%; text-align: center; background: #fc0; border-color: #fc0; color: #000;">
-				<span class="dashicons dashicons-admin-users" style="margin-top: 3px;"></span>
+		<div class="yandex-id-login-wrapper">
+			<a href="<?php echo esc_url( $auth_url ); ?>" class="yandex-id-button">
+				<img src="<?php echo esc_url( $icon_url ); ?>" alt="Yandex" />
 				<?php echo esc_html( $button_text ); ?>
 			</a>
 		</div>

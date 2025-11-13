@@ -1,0 +1,45 @@
+.yandex-id-button {
+	box-sizing: border-box;
+	width: 100%;
+	height: 56px;
+	min-width: 194px;
+	padding: 14px 16px;
+	margin: 0;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	outline: 0;
+	background-color: #000;
+	transition: opacity 0.6s, background-color 0.3s;
+	text-decoration: none;
+}
+
+.yandex-id-button:hover {
+	background-color: #333;
+	opacity: 0.9;
+	color: #fff;
+	text-decoration: none;
+}
+
+.yandex-id-button:active {
+	opacity: 0.8;
+}
+
+.yandex-id-button img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+.yandex-id-login-wrapper {
+	margin: 20px 0;
+}
